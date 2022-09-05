@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Intro</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="js/fullPage.js-master/dist/fullpage.min.css">
+<script src="js/jquery-3.6.1.min.js"></script>
+<script src="js/fullPage.js-master/dist/fullpage.min.js"></script>
+
+<script type="text/javascript">
+    $(function(){
+        $('#fullpage').fullpage({
+  sectionsColor: ['tan', 'lightgreen', '#C4E4DF', '#ADD8E6'],
+  anchors:['firstPage', 'secondPage', 'thirdPage'],
+  navigation:true,
+  // Get your license at https://alvarotrigo.com/fullPage/pricing/
+  licenseKey: 'YOUR LICENSE KEY HERE '
+
+        }); // end fullpage
+    });
+</script>
+</head>
+<body>
+
+
+<!--dot menu--> 
+<ul id="menu" style="display: none;">
+    <li data-menuanchor="firstPage"><a href="#firstPage">First slide</a></li>
+    <li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
+    <li data-menuanchor="thirdPage"><a href="#thirdPage">Third slide</a></li>
+</ul>
+<div id="navbar">
+    <a href="#">About fullpage</a>
+</div>
+<div id="fullpage">
+    <div class="section">
+        About Me
+        <p>I am in my last class for the web developement certificate program. 
+            I have 3 cats at the moment:
+            <ol>Leo, slightly orange.</ol>
+            <ol>Matilda, white with a red and blue eye.</ol>
+            <ol>Then currently housing a rescue named Haley that's been pregnant probably 3 times.</ol>  
+        </p>
+    </div>
+    <div class="section">
+        Hobbies/interests
+        <p>I love learning about how stuff works.
+          I am addicted to installing GNU/linux on anything
+          I can get my hands on. I've tried Ubunto first, then 
+          Debian distributions like stock Debian and Parrot OS,
+          and have tried compiling from source with distributions
+          like Gentoo. I love learning about cyber security and pentesting.
+          I am very interested in specifically web applications and finding
+          vulnerabilities ethically within them.   
+        </p>
+        
+        <p>Recently acquired books</p>
+        <div id="images">
+        <img src="css/images/15159064_15159064_xl.webp" alt="TCP/IP Illustrated">
+        <img src="css/images/9781118026472.webp" alt="Web Application Hackers Handbook">
+        <img src="css/images/JavaScript-jQuery-The-Missing-Manual.webp" alt="jQuery">
+        </div>
+    </div>
+    <div class="section">
+        Adobe Experience
+        <p>I have little Adobe experience. From these Devry classes I was able to learn 
+            Adobe Photoshop, Adobe InDesign, and Adobe Illustrator.  </p>
+    </div>
+    <div class="section">
+        Future Plans
+        <p>I don't mind common retail jobs as there is always a need for them.
+            But, I want to one day be a Developer of some kind. Heck I could even be 
+            a janitor at Microsoft Headquarters or something. I just need to get my feet wet.
+            Maybe learn Cisco Networking as an alternative because I've always been 
+            in the wires so to speak. As long as I can remember. 
+            <a href="https://sonic-pi.net/" target="_blank">Check this out!</a> Coding music.
+        </p>
+    </div>
+</div>
+
+</body>
+</html>
